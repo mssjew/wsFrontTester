@@ -14,11 +14,11 @@
 
     <script>
       // Connect to the middleware via socket.io
-      const socket = io.connect("https://15.185.217.208:3000", {
+      const socket = io.connect("15.185.217.208:3000", {
         transports: ["websocket"],
       });
 
-      // Receive real-time data from the middleware
+      // Receive real-time data from the middleware2
       socket.on("update", (data) => {
         document.getElementById("updates-list").innerText = data;
       });
